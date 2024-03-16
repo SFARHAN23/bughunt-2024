@@ -1,6 +1,6 @@
 //program to find the longest common subsequence (LCS) in two strings
 //e.g. ABCDE and AFCZE have a common subsequence of ACE
-
+//no errors
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -6,7 +6,7 @@ def addBinary(a: str, b: str) -> str:
     i = len(a) - 1
     j = len(b) - 1
 
-    while i >= 0 or j >= 0:
+    while i >= 0 or j >= 0 or carry!=0:
       if i >= 0:
         carry += int(a[i])
         i -= 1

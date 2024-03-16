@@ -2,7 +2,7 @@
 #e.g. 2->4->3 + 5->6->4 = 7->0->8 (342 + 465 = 807)
 
 # Definition for singly-linked list.
-class ListNode(object):
+class ListNode(object):#no error
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next

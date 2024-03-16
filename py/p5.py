@@ -8,10 +8,10 @@ def get_number():
             val1 = input('Enter a number: ')
             val1 = int(val1)
 
-        str_to_print = '{:.1f}'.format(val1)
+        str_to_print = '{1f}'.format(val1)
         return str_to_print
 
     except ValueError:
-        get_number()
+        return get_number()
 
 print(get_number())

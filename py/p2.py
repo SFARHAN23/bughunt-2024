@@ -2,8 +2,10 @@
 # input- 1 -> output- [1], input- 2 -> output- [2]
 
 def add_item(item, items=[]):
-   items.append(item)
-   return items
+   if len(items)!=0:
+        items.pop(0)
+    items.append(item)  
+    return items
 
 print(add_item(1))
 print(add_item(2))

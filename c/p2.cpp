@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//no error
 class A{
     int variable;
 public: 

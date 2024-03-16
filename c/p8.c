@@ -16,6 +16,6 @@ int main()
 {
     float x[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     size_t N = 10;
-    printf("%.3g\n", computeAverage(x, &N));
+    printf("%.3f\n", computeAverage(x, &N));
     return 0;
 }

@@ -3,7 +3,7 @@
 #include<stdio.h>
 int *fun()
 {
-    int x = 5;
+    static int x = 5;
     return &x;
 }
 int main()

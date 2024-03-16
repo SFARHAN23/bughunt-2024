@@ -9,7 +9,7 @@
  */
 
 #include <stdio.h>
-
+#include<stdlib.h>
 int* filterMultiples(int* arr, int N, int* NOut, int num) {
     int numPrimes = 0;
     *NOut = 0;

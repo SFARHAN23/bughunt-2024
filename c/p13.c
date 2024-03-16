@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int i = 0;
+//int i = 0;
 
 int main(){
     int i = i;
@@ -17,7 +17,7 @@ int main(){
         printf("%d ", a[i]);
     }
     printf("\n");
-    for(i;i<m;i++){
+    for(int i=0;i<m;i++){
         printf("%d ", b[i]);
     }
 }

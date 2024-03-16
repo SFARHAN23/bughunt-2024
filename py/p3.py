@@ -9,5 +9,6 @@ def delete_starting_evens(list):
       break
   return list
 
-list = [2, 8, 10, 11]
+list = [2, 8, 10, 11
+       #changes visible
 print(delete_starting_evens(list))

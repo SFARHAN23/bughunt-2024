@@ -14,8 +14,8 @@ void checkSum(int a[], int n, int t){
         table[i][0] = true;
     }
 
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=t;j++){
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<=t;j++){
             if(j < a[i-1]){
                 table[i][j] = table[i-1][j];
             }

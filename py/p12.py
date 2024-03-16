@@ -1,6 +1,6 @@
 # Program to multiply two matrices using nested loops
 
-A = [[1,2,3],[4,5,6],[7,8,9]]
+A = [[1,2,3],[4,5,6],[7,8,9]] #no error
 B = [[10,11,12],[13,14,15],[16,17,18]]
  
 p = len(A)

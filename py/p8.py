@@ -27,7 +27,11 @@ class doubly_linked_list(object):
         self.count += 1
 
     def print_foward(self):
-        print(self.iter())
+        current=self.head
+        while current:
+            item_val=current.data
+            current=current.next
+            print(item_val)
             
     def iter(self):
         # Iterate the list

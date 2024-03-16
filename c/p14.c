@@ -22,7 +22,10 @@ int romanToInt(char * s){
         if(a[i] < a[i+1]){
             a[i+1] -= a[i];
         }
-        num += a[i];
+        else{
+            num += a[i];
+            
+        }
     }
     num += a[strlen(s) - 1];
     return num;

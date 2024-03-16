@@ -6,6 +6,6 @@ void main(){
     int a=10;
     int *ptr = &a;
 
-    *ptr++;
+    (*ptr)++;
     printf("%d", *ptr);
 }

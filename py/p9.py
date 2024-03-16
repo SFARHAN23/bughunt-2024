@@ -1,18 +1,20 @@
-#Finding Average RGB values using the listmaker fuction to generate list of rgb values for a pixel
+#Write a Python function to check whether a string is a pangram or not.
+#Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
 
-def listmaker(r,g,b,list1=[]):
-    if (list1!=[]):
-        list1=[]
-    list1.append(r)
-    list1.append(g)
-    list1.append(b)
-    return list1
+import string
+import sys
 
-pixel1=listmaker(23,78,34)
-pixel2=listmaker(210,56,67)
-pixel3=listmaker(23,78,248)
-r=(pixel1[0]+pixel2[0]+pixel3[0])/3
-g=(pixel1[1]+pixel2[1]+pixel3[1])/3
-b=(pixel1[2]+pixel2[2]+pixel3[2])/3
-rgb=[r,g,b]
-print("Average RGB values of the pixels are",rgb)
+# Define a function named 'ispangram' that checks if a string is a pangram
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    alphaset = list(alphabet)
+    
+    str = list(str1.lower())
+    for i in range (0,26):
+        if alphaset[i] not in str:
+            break
+        if i==25:
+            return True
+    return False
+
+# Print the result of checking if the string is a pangram by calling the 'ispangram' function
+print(ispangram('The quick brown fox jumps over the lazy dog')) 

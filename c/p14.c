@@ -5,7 +5,7 @@
 #include<string.h>
 
 int romanToInt(char * s){
-    int *a = (int *)malloc(strlen(s) * sizeof(int));
+    int *a = (int *)malloc((strlen(s)+1) * sizeof(int));
     for(int i=0;i<strlen(s);i++){
         switch(s[i]){
             case 'I': a[i] = 1; break;
